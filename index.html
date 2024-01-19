@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://kit.fontawesome.com/1205482781.js"></script><style media="all" id="fa-v4-shims">
+    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title _msttexthash="42250" _msthash="0">Casa</title>
+      </head>
+
+  <body>
+      <div class="container-fluid">
+        <div class="row">
+          <!--SIDEBAR VERTICAL-->
+          <div class="col-2">
+            <nav
+              class="navbar navbar-expand-md navbar-white bg-navbar fixed-left justify-content-between"
+              id="sidebar"
+            >
+              <div class="nav-container">
+                <a class="navbar-brand" href="index.html">
+                  <img
+                    src="logo/Spotify_Logo.png"
+                    alt="Spotify_Logo"
+                    width="131"
+                    height="40"
+                    _mstalt="202579"
+                    _msthash="1"
+                  />
+                </a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarNavAltMarkup"
+                  aria-controls="navbarNavAltMarkup"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                  _msthidden="A"
+                  _mstaria-label="320099"
+                  _msthash="2"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <ul>
+                      <li>
+                        <a class="nav-item nav-link" href="index.html"
+                          ><i class="fas fa-home fa-lg" aria-hidden="true"></i
+                          ><font
+                            _mstmutation="1"
+                            _msttexthash="42250"
+                            _msthash="3"
+                          >
+                            Casa
+                          </font></a
+                        >
+                      </li>
+                      <li>
+                        <a class="nav-item nav-link" href="#"
+                          ><i
+                            class="fas fa-book-open fa-lg"
+                            aria-hidden="true"
+                          ></i
+                          ><font
+                            _mstmutation="1"
+                            _msttexthash="277277"
+                            _msthash="4"
+                            >La tua Biblioteca
+                          </font></a
+                        >
+                      </li>
+                      <li>
+                        <div class="input-group mt-3">
+                          <input
+                            type="text"
+                            class="form-control mb-2"
+                            id="searchField"
+                            placeholder="Ricerca"
+                            aria-label="Ricerca"
+                            aria-describedby="basic-addon2"
+                            _mstplaceholder="74607"
+                            _msthash="5"
+                            _mstaria-label="74607"
+                          />
+                          <div
+                            class="input-group-append"
+                            style="margin-bottom: 4%"
+                          >
+                            <button
+                              class="btn btn-outline-secondary btn-sm"
+                              type="button"
+                              id="button-search"
+                              onclick="search()"
+                              _msttexthash="52923"
+                              _msthash="6"
+                            >
+                              ANDARE
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nav-btn">
+                <button
+                  class="btn signup-btn"
+                  type="button"
+                  _msttexthash="159588"
+                  _msthash="7"
+                >
+                  Registrati
+                </button>
+                <button
+                  class="btn login-btn"
+                  type="button"
+                  _msttexthash="94068"
+                  _msthash="8"
+                >
+                  Accesso
+                </button>
+                <font _mstmutation="1" _msttexthash="652028" _msthash="9"
+                  ><a href="#" _mstmutation="1" _istranslated="1"
+                    >Politica dei cookie</a
+                  >
+                  | <a href="#" _mstmutation="1" _istranslated="1"> Privacy</a>
+                </font>
+              </div>
+            </nav>
+          </div>
+          <!--END SIDEBAR VERTICAL-->
+
+          <!--MAIN-->
+          <div class="col-12 mb-5 col-md-9 offset-md-3 mainPage">
+            <div class="row">
+              <div class="col-9 col-lg-11 mainLinks d-none d-md-flex">
+                <a href="#" _msttexthash="44109" _msthash="10">TREND</a>
+                <a href="#" _msttexthash="96824" _msthash="11">IL PODCAST</a>
+                <a href="#" _msttexthash="286767" _msthash="12"
+                  >STATI D'ANIMO E GENERI</a
+                >
+                <a href="#" _msttexthash="132665" _msthash="13">NUOVE USCITE</a>
+                <a href="#" _msttexthash="83694" _msthash="14">SCOPRIRE</a>
+              </div>
+            </div>
+            <div class="row" _msthidden="1">
+              <div class="col-10" _msthidden="1">
+                <div id="searchResults" style="display: none" _msthidden="1">
+                  <h2 _msttexthash="233025" _msthidden="1" _msthash="15">
+                    Search Results
+                  </h2>
+                  <div
+                    class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-10">
+                <div id="eminem" class="">
+                  <h2 _msttexthash="75647" _msthash="16">Eminem</h2>
+                  <div
+                    class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3"
+                    id="eminemSection"
+                  >
+                    <div class="col col-3">
+                      <img
+                        class="w-100"
+                        src="https://e-cdns-images.dzcdn.net/images/cover/b6938db3addc3ccd9575d6d12220e466/1000x1000-000000-80-0-0.jpg"
+                      />
+                    </div>
+                    <div class="col col-3">
+                      <img
+                        class="w-100"
+                        src="https://e-cdns-images.dzcdn.net/images/cover/bc4d98904d61661cc6d7dd53745340d0/1000x1000-000000-80-0-0.jpg"
+                      />
+                    </div>
+                    <div class="col col-3">
+                      <img
+                        class="w-100"
+                        src="https://e-cdns-images.dzcdn.net/images/cover/ec3c8ed67427064c70f67e5815b74cef/1000x1000-000000-80-0-0.jpg"
+                      />
+                    </div>
+                    <div class="col col-3">
+                      <img
+                        class="w-100"
+                        src="https://e-cdns-images.dzcdn.net/images/cover/be682506145061814eddee648edb7c59/1000x1000-000000-80-0-0.jpg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-10">
+                <div id="metallica" class="">
+                  <h2 _msttexthash="130663" _msthash="17">Metallica</h2>
+                  <div
+                    class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3"
+                    id="metallicaSection"
+                  >
+                    <div class="col col-3">
+                      <img
+                        class="w-100"
+                        src="https://e-cdns-images.dzcdn.net/images/cover/f1c31620f0e108b707ce1a1af0954158/1000x1000-000000-80-0-0.jpg"
+                      />
+                    </div>
+                    <div class="col col-3">
+                      <img
+                        class="w-100"
+                        src="https://e-cdns-images.dzcdn.net/images/cover/f1c31620f0e108b707ce1a1af0954158/1000x1000-000000-80-0-0.jpg"
+                      />
+                    </div>
+                    <div class="col col-3">
+                      <img
+                        class="w-100"
+                        src="https://e-cdns-images.dzcdn.net/images/cover/f1c31620f0e108b707ce1a1af0954158/1000x1000-000000-80-0-0.jpg"
+                      />
+                    </div>
+                    <div class="col col-3">
+                      <img
+                        class="w-100"
+                        src="https://e-cdns-images.dzcdn.net/images/cover/f1c31620f0e108b707ce1a1af0954158/1000x1000-000000-80-0-0.jpg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-10">
+                <div id="queen" class="">
+                  <h2 _msttexthash="74529" _msthash="18">Regina</h2>
+                  <div
+                    class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3"
+                    id="queenSection"
+                  >
+                    <div class="col col-3">
+                      <img
+                        class="w-100"
+                        src="https://e-cdns-images.dzcdn.net/images/cover/9a20f8b2547cbb74635539c219de3a84/1000x1000-000000-80-0-0.jpg"
+                      />
+                    </div>
+                    <div class="col col-3">
+                      <img
+                        class="w-100"
+                        src="https://e-cdns-images.dzcdn.net/images/cover/6706f1154083f461a348508c28030a30/1000x1000-000000-80-0-0.jpg"
+                      />
+                    </div>
+                    <div class="col col-3">
+                      <img
+                        class="w-100"
+                        src="https://e-cdns-images.dzcdn.net/images/cover/fb22a75aa1aafc992230abd0bd79faef/1000x1000-000000-80-0-0.jpg"
+                      />
+                    </div>
+                    <div class="col col-3">
+                      <img
+                        class="w-100"
+                        src="https://e-cdns-images.dzcdn.net/images/cover/e16455433a84c7e19025403ae3eec52d/1000x1000-000000-80-0-0.jpg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" _msthidden="1">
+              <div class="col-10" _msthidden="1">
+                <div id="found" class="d-none" _msthidden="1">
+                  <h2 _msttexthash="238433" _msthidden="1" _msthash="19">
+                    Search results
+                  </h2>
+                  <div
+                    class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3"
+                    id="searchSection"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END MAIN-->
+
+      <!--NAVBAR FLEX-BOTTOM-->
+      <div class="container-fluid fixed-bottom bg-container pt-1">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-2">
+            <div class="row">
+              <div
+                class="col-6 col-md-4 col-lg-2 offset-3 offset-md-4 offset-lg-5 playerControls mt-1"
+              >
+                <div class="row">
+                  <a href="#">
+                    <img
+                      src="playerbuttons/Shuffle.png"
+                      alt="Cambiare"
+                      _mstalt="96733"
+                      _msthash="20"
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="playerbuttons/Previous.png"
+                      alt="Cambiare"
+                      _mstalt="96733"
+                      _msthash="21"
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="playerbuttons/Play.png"
+                      alt="Cambiare"
+                      _mstalt="96733"
+                      _msthash="22"
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="playerbuttons/Next.png"
+                      alt="Cambiare"
+                      _mstalt="96733"
+                      _msthash="23"
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="playerbuttons/Repeat.png"
+                      alt="Cambiare"
+                      _mstalt="96733"
+                      _msthash="24"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center playBar py-3">
+              <div class="col-8 col-md-6">
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END NAVBAR BOTTOM-->
+
+      <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"
+      ></script>
+      <script >
+        const fetchMusic = (query, id) => {
+    const section = document.querySelector(`#${id}`)
+
+    const row = document.querySelector(`#${id}Section`)
+    console.log(row)
+    fetch(
+      "https://striveschool-api.herokuapp.com/api/deezer/search?q=" + query
+    )
+      .then((raw) => {
+        return raw.json()
+      })
+      .then((res) => {
+        let music = res.data
+        section.classList.remove("d-none")
+        for (let i = 0; i < music.slice(0, 4).length; i++) {
+          const element = music[i]
+          row.innerHTML += `<div class='col col-3'> <img class='w-100' src='${element.album.cover_xl}'/> </div>`
+        }
+      })
+      .catch((err) => console.log(err))
+  }
+  window.onload = () => {
+    fetchMusic("eminem", "eminem")
+    fetchMusic("queen", "queen")
+    fetchMusic("metallica", "metallica")
+  }
+        </script>
+    </body>
+</html>
